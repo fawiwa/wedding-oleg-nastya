@@ -808,6 +808,9 @@ h3 {
     width: 100%;
     position: relative;
   }
+    .hero {
+    padding-bottom: 12%;
+  }
 
   .date h2 {
     transform: translateX(-40%) translateY(5%);
@@ -822,7 +825,7 @@ h3 {
   }
 
   .gifts img {
-    left: -5.9%;
+    left: -8.9%;
   }
 
   .flowers img {
@@ -830,7 +833,6 @@ h3 {
     top: 15.1%;
   }
 
-  .dresscode img {}
 
   .footer-text h4 {
     font-size: 46px;
