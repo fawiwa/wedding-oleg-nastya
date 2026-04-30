@@ -17,16 +17,16 @@
 @font-face {
   font-family: 'Baskerville Light';
   src: url('fonts/baskervillelight.woff2') format('woff2'),
-  url('fonts/baskervillelight.ttf') format('truetype');
+    url('fonts/baskervillelight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-    font-display: swap;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Baskerville Bold';
   src: url('fonts/baskervillebold.woff2') format('woff2'),
-  url('fonts/baskervillebold.ttf') format('truetype');
+    url('fonts/baskervillebold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -708,7 +708,7 @@ h3 {
   transform: translateY(24px);
 }
 
-@media (max-width: 430px) {
+@media (min-width: 413px) and (max-width: 430px) {
 
   .container,
   .hero {
@@ -797,6 +797,33 @@ h3 {
     transform: scale(0.5) translateX(20px) !important;
     transform-origin: center bottom;
     display: block;
+  }
+}
+
+@media (min-width: 344px) and (max-width: 412px) {
+  .date h2 {
+    transform: translateX(-40%) translateY(5%);
+  }
+.gradient {
+    margin-top: -20px;
+  } 
+  .timeline-item.row-left {
+  margin-left: -0.7%;
+}
+.gifts img {
+  left: -15.9%;
+}
+.flowers img {
+  right: -35.8%;
+    top: 15.1%;
+  }
+  .dresscode img {
+    transform: translateX(-8%);
+  }
+  .footer-text h4 {
+ font-size: 46px;
+   transform: translateX(-70px) translateY(6px) rotate(-7.55deg);
+
   }
 }
 
