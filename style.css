@@ -3,23 +3,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*outline: 1px solid red !important;*/
 }
 
 @font-face {
+  font-family: 'Beer Money';
+  src: url('fonts/beermoney.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Baskerville Light';
+  src: url('fonts/baskervillelight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Baskerville Bold';
-  src: url('../fonts/baskerville_bold.eot');
-  /* IE 9 Compatibility Mode */
-  src: url('../fonts/baskerville_bold.eot?#iefix') format('embedded-opentype'),
-    /* IE < 9 */
-    url('../fonts/baskerville_bold.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/baskerville_bold.woff') format('woff'),
-    /* Firefox >= 3.6, any other modern browser */
-    url('../fonts/baskerville_bold.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/baskerville_bold.svg#baskerville_bold') format('svg');
-  /* Chrome < 4, Legacy iOS */
+  src: url('fonts/baskervillebold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
@@ -44,7 +46,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Beer Money', arial;
+  font-family: 'Beer Money', sans-serif;
   font-weight: normal;
   color: #336096;
   margin-top: 0;
