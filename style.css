@@ -801,28 +801,40 @@ h3 {
 }
 
 @media (min-width: 344px) and (max-width: 412px) {
+
+  .container,
+  .hero {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
   .date h2 {
     transform: translateX(-40%) translateY(5%);
   }
-.gradient {
-    margin-top: -20px;
-  } 
+
+  .gradient {
+    margin-top: -15px;
+  }
+
   .timeline-item.row-left {
-  margin-left: -0.7%;
-}
-.gifts img {
-  left: -15.9%;
-}
-.flowers img {
-  right: -35.8%;
+    margin-left: -0.7%;
+  }
+
+  .gifts img {
+    left: -5.9%;
+  }
+
+  .flowers img {
+    right: -19.8%;
     top: 15.1%;
   }
-  .dresscode img {
-    transform: translateX(-8%);
-  }
+
+  .dresscode img {}
+
   .footer-text h4 {
- font-size: 46px;
-   transform: translateX(-70px) translateY(6px) rotate(-7.55deg);
+    font-size: 46px;
+    transform: translateX(-90px) translateY(6px) rotate(-7.55deg);
 
   }
 }
