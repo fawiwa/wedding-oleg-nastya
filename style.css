@@ -7,25 +7,32 @@
 
 @font-face {
   font-family: 'Beer Money';
-  src: url('fonts/beermoney.ttf') format('truetype');
+  src: url('fonts/beermoney.ttf') format('truetype'),
+    url('fonts/beermoney.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'Baskerville Light';
-  src: url('fonts/baskervillelight.ttf') format('truetype');
+  src: url('fonts/baskervillelight.woff2') format('woff2'),
+  url('fonts/baskervillelight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
   font-family: 'Baskerville Bold';
-  src: url('fonts/baskervillebold.ttf') format('truetype');
+  src: url('fonts/baskervillebold.woff2') format('woff2'),
+  url('fonts/baskervillebold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 body {
-  font-family: 'Baskerville Light', arial;
+  font-family: 'Baskerville Light', serif;
   font-size: 24px;
   font-style: normal;
   margin: 0;
@@ -40,6 +47,8 @@ body {
   overflow-x: hidden;
   width: 100%;
   position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -756,8 +765,9 @@ h3 {
     transform: translateY(-10px) rotate(-6.05deg);
 
   }
+
   .dresscode img {
-      top: 45%;
+    top: 45%;
   }
 
   .footer-polaroid {
@@ -789,14 +799,16 @@ h3 {
     display: block;
   }
 }
+
 @media (min-width: 431px) and (max-width: 1024px) {
-    .bottom-wave {
+  .bottom-wave {
     transform: translateX(-50%) translateY(-20%);
     display: flex;
     justify-content: center;
 
   }
-   .wave-img {
+
+  .wave-img {
     transform: scale(0.5) translateX(-20px) !important;
     transform-origin: center bottom;
     display: block;
