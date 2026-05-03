@@ -808,21 +808,58 @@ h3 {
     width: 100%;
     position: relative;
   }
-    .hero {
+
+  .hero {
     padding-bottom: 12%;
+  }
+
+  .hearts img {
+    right: 10%;
+  }
+
+  .couple-photos img {
+    max-width: 110vw;
+    object-fit: contain;
   }
 
   .date h2 {
     transform: translateX(-40%) translateY(5%);
   }
 
+  .date img {
+    transform: translateY(-75%);
+  }
+
+  .wave-section {
+    background-size: 320%;
+    min-height: 288px;
+  }
+
+  .invite-text {
+    margin-top: -20px;
+  }
+
   .gradient {
     margin-top: -15px;
+  }
+
+  .timeline {
+    padding-bottom: 10px;
   }
 
   .timeline-item.row-left {
     margin-left: -0.7%;
   }
+
+  .shell01 {
+    transform: translateX(-30px) translateY(-5px);
+  }
+
+  .seashells img {
+    max-width: 100%;
+    left: 0;
+  }
+
 
   .gifts img {
     left: -8.9%;
@@ -833,11 +870,43 @@ h3 {
     top: 15.1%;
   }
 
+  .dresscode img {
+    top: 45%;
+  }
+
+  .footer-polaroid {
+
+    padding-bottom: 40px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 70px;
+    bottom: -29px;
+  }
 
   .footer-text h4 {
     font-size: 46px;
     transform: translateX(-90px) translateY(6px) rotate(-7.55deg);
 
+  }
+
+  .bottom-wave {
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    bottom: 4px;
+  }
+
+  .wave-img {
+    transform: scale(0.5) translateX(20px) !important;
+    transform-origin: center bottom;
+    display: block;
   }
 }
 
