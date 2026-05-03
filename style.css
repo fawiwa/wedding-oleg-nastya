@@ -203,7 +203,7 @@ h3 {
   z-index: 1;
 }
 
-.wedding-day .day-num::before {
+/* .wedding-day .day-num::before {
   content: '❤';
   position: absolute;
   top: 50%;
@@ -213,6 +213,19 @@ h3 {
   font-size: 2.5rem;
   z-index: -1;
   font-style: normal;
+} */
+.wedding-day .day-num::before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #336096;
+  mask: url('data:image/svg+xml;utf8,<svg...>...</svg>') no-repeat center;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat center;
+  z-index: -1;
 }
 
 .gradient {
@@ -892,6 +905,12 @@ h3 {
 }
 
 @media (min-width: 1100px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    width: 430px;
+  }
+
   .desktop-photo {
     display: block;
     position: absolute;
@@ -903,7 +922,7 @@ h3 {
     background-size: cover;
     width: 396px;
     height: 297px;
-    right: 286px;
+    right: -450px;
     top: 197px;
   }
 
@@ -912,7 +931,7 @@ h3 {
     background-size: cover;
     width: 260px;
     height: 347px;
-    left: 322px;
+    left: -417px;
     top: 516px;
   }
 
@@ -921,7 +940,7 @@ h3 {
     background-size: cover;
     width: 307px;
     height: 409.33px;
-    left: 222px;
+    left: -525px;
     top: 1520px;
     transform: rotate(-5.06deg);
     z-index: 2;
@@ -932,10 +951,10 @@ h3 {
     background-size: cover;
     width: 288.53px;
     height: 384.7px;
-    right: 304px;
+    right: -434px;
     top: 1852px;
     transform: rotate(-2.27deg);
-        z-index: 2;
+    z-index: 2;
   }
 
   .photo5 {
@@ -943,34 +962,37 @@ h3 {
     background-size: cover;
     width: 300.63px;
     height: 400.84px;
-    left: 319px;
+    left: -419px;
     top: 2430px;
     transform: rotate(1.07deg);
   }
-    .photo6 {
+
+  .photo6 {
     background-image: url(img/bg_photo6.png);
     background-size: cover;
     width: 309px;
     height: 412px;
-    right: 294px;
+    right: -444px;
     top: 2904px;
     transform: rotate(4.24deg);
   }
-    .photo7 {
+
+  .photo7 {
     background-image: url(img/bg_photo7.png);
     background-size: cover;
     width: 300px;
     height: 400px;
-    left: 319px;
+    left: -419px;
     top: 3625px;
     transform: rotate(-3.18deg);
   }
-      .photo8 {
+
+  .photo8 {
     background-image: url(img/bg_photo8.png);
     background-size: cover;
     width: 269px;
     height: 358px;
-    right: 281px;
+    right: -455px;
     top: 4006px;
     transform: rotate(-5.45deg);
     z-index: -1;
