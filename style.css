@@ -3,27 +3,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*outline: 1px solid red !important;*/
+}
+
+@font-face {
+  font-family: 'Beer Money';
+  src: url('fonts/beermoney.ttf') format('truetype'),
+    url('fonts/beermoney.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baskerville Light';
+  src: url('fonts/baskervillelight.woff2') format('woff2'),
+    url('fonts/baskervillelight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Baskerville Bold';
-  src: url('../fonts/baskerville_bold.eot');
-  /* IE 9 Compatibility Mode */
-  src: url('../fonts/baskerville_bold.eot?#iefix') format('embedded-opentype'),
-    /* IE < 9 */
-    url('../fonts/baskerville_bold.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/baskerville_bold.woff') format('woff'),
-    /* Firefox >= 3.6, any other modern browser */
-    url('../fonts/baskerville_bold.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/baskerville_bold.svg#baskerville_bold') format('svg');
-  /* Chrome < 4, Legacy iOS */
+  src: url('fonts/baskervillebold.woff2') format('woff2'),
+    url('fonts/baskervillebold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
-  font-family: 'Baskerville Light', arial;
+  font-family: 'Baskerville Light', serif;
   font-size: 24px;
   font-style: normal;
   margin: 0;
@@ -38,20 +47,24 @@ body {
   overflow-x: hidden;
   width: 100%;
   position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Beer Money', arial;
+  font-family: 'Beer Money', sans-serif;
   font-weight: normal;
   color: #336096;
   margin-top: 0;
   padding: 0;
 }
 
-
+.desktop-photo {
+  display: none;
+}
 
 .container {
   display: flex;
@@ -118,27 +131,6 @@ h4 {
   position: relative;
   left: 50%;
   transform: translateX(-42%);
-}
-
-.date {
-  margin-top: 1.5px;
-}
-
-.date h2 {
-  text-align: left;
-  margin-top: -110px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-9.2%);
-  font-size: 48px;
-  color: black;
-}
-
-.date img {
-  position: absolute;
-  margin-bottom: 0;
-  transform: translateY(-87%);
-  left: 10px;
 }
 
 
@@ -697,7 +689,7 @@ h3 {
   transform: translateY(24px);
 }
 
-@media (max-width: 430px) {
+@media (min-width: 413px) and (max-width: 430px) {
 
   .container,
   .hero {
@@ -718,14 +710,6 @@ h3 {
   .couple-photos img {
     max-width: 110vw;
     object-fit: contain;
-  }
-
-  .date h2 {
-    transform: translateX(-40%) translateY(20%);
-  }
-
-  .date img {
-    transform: translateY(-75%);
   }
 
   .wave-section {
@@ -754,8 +738,9 @@ h3 {
     transform: translateY(-10px) rotate(-6.05deg);
 
   }
+
   .dresscode img {
-      top: 45%;
+    top: 45%;
   }
 
   .footer-polaroid {
@@ -787,16 +772,138 @@ h3 {
     display: block;
   }
 }
+
+@media (min-width: 344px) and (max-width: 412px) {
+
+  .container,
+  .hero {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .hero {
+    padding-bottom: 12%;
+  }
+
+  .hearts img {
+    right: 10%;
+  }
+
+  .couple-photos img {
+    max-width: 110vw;
+    object-fit: contain;
+  }
+
+  .wave-section {
+    background-size: 320%;
+    min-height: 288px;
+  }
+
+  .invite-text {
+    margin-top: -20px;
+  }
+
+  .gradient {
+    margin-top: -20px;
+  }
+
+  .timeline {
+    padding-bottom: 10px;
+  }
+
+  .timeline-item.row-left {
+    margin-left: -0.7%;
+  }
+
+  .shell01 {
+    transform: translateX(-30px) translateY(-5px);
+  }
+
+  .seashells img {
+    max-width: 100%;
+    left: 0;
+  }
+
+
+  .gifts img {
+    left: -8.9%;
+  }
+
+  .flowers img {
+    right: -22.8%;
+    top: 15.1%;
+  }
+
+  .dresscode img {
+    top: 45%;
+    left: 10%;
+  }
+
+  .footer-polaroid {
+
+    padding-bottom: 40px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 70px;
+    bottom: -29px;
+  }
+
+  .footer-text h4 {
+    font-size: 46px;
+    transform: translateX(-90px) translateY(6px) rotate(-7.55deg);
+
+  }
+
+  .bottom-wave {
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    bottom: 4px;
+  }
+
+  .wave-img {
+    transform: scale(0.5) translateX(20px) !important;
+    transform-origin: center bottom;
+    display: block;
+  }
+}
+
 @media (min-width: 431px) and (max-width: 1024px) {
-    .bottom-wave {
+  .bottom-wave {
     transform: translateX(-50%) translateY(-20%);
     display: flex;
     justify-content: center;
 
   }
-   .wave-img {
+
+  .wave-img {
     transform: scale(0.5) translateX(-20px) !important;
     transform-origin: center bottom;
     display: block;
+  }
+}
+
+@media (min-width: 1100px) {
+  .desktop-photo {
+    display: block !important;
+    position: fixed;
+    width: 396px;
+    height: 297px;
+    z-index: 999;
+    background-color: #fff;
+  }
+
+  .photo1 {
+    background-image: url(img/bg_photo1.png);
+    left: 20px;
+    top: 50px;
   }
 }
