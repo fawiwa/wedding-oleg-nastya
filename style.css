@@ -82,7 +82,7 @@ h4 {
 
 .hero {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   padding-top: 23px;
 
 }
@@ -141,7 +141,7 @@ h3 {
   max-width: 324px;
   line-height: 60px;
   text-transform: uppercase;
-  padding-top: 14px;
+
 }
 
 .invite-text p {
@@ -284,7 +284,7 @@ h3 {
   position: absolute;
   object-fit: contain;
   display: inline-block;
-  top: 32.5%;
+  top: 33.5%;
   left: -3.9%;
   transform: scaleX(-1);
 }
@@ -299,7 +299,7 @@ h3 {
   max-width: 378px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 105px;
 }
 
 .timeline h3 {
@@ -469,7 +469,7 @@ h3 {
 }
 
 .gifts {
-  margin-top: 42px;
+  margin-top: 57px;
 }
 
 .gifts img {
@@ -496,7 +496,7 @@ h3 {
 }
 
 .flowers {
-  margin-top: 18px;
+  margin-top: 30px;
 }
 
 
@@ -519,14 +519,14 @@ h3 {
   position: absolute;
   width: 227px;
   height: 378px;
-  top: 14.1%;
+  top: 15.3%;
   right: -19.8%;
   z-index: -1;
 }
 
 
 .dresscode {
-  margin-top: 11px;
+  margin-top: 25px;
 }
 
 .dresscode h3 {
@@ -549,13 +549,13 @@ h3 {
   position: absolute;
   object-fit: contain;
   display: inline-block;
-  top: 46.7%;
+  top: 46.6%;
   left: 12.2%;
 }
 
 
 .contacts {
-  margin-top: 58%;
+  margin-top: 62%;
   text-align: center;
   position: relative;
 }
@@ -563,7 +563,7 @@ h3 {
 .contacts::after {
   content: "";
   position: absolute;
-  top: 198px;
+  top: 185px;
   right: 22px;
   width: 114px;
   height: 24px;
@@ -620,7 +620,7 @@ h3 {
 .footer {
   font-size: 52px;
   margin-top: 54px;
-  padding-top: 54px;
+  padding-top: 67px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -893,17 +893,86 @@ h3 {
 
 @media (min-width: 1100px) {
   .desktop-photo {
-    display: block !important;
-    position: fixed;
-    width: 396px;
-    height: 297px;
-    z-index: 999;
-    background-color: #fff;
+    display: block;
+    position: absolute;
+    opacity: 0.8;
   }
 
   .photo1 {
     background-image: url(img/bg_photo1.png);
-    left: 20px;
-    top: 50px;
+    background-size: cover;
+    width: 396px;
+    height: 297px;
+    right: 286px;
+    top: 197px;
+  }
+
+  .photo2 {
+    background-image: url(img/bg_photo2.png);
+    background-size: cover;
+    width: 260px;
+    height: 347px;
+    left: 322px;
+    top: 516px;
+  }
+
+  .photo3 {
+    background-image: url(img/bg_photo3.png);
+    background-size: cover;
+    width: 307px;
+    height: 409.33px;
+    left: 222px;
+    top: 1520px;
+    transform: rotate(-5.06deg);
+    z-index: 2;
+  }
+
+  .photo4 {
+    background-image: url(img/bg_photo4.png);
+    background-size: cover;
+    width: 288.53px;
+    height: 384.7px;
+    right: 304px;
+    top: 1852px;
+    transform: rotate(-2.27deg);
+        z-index: 2;
+  }
+
+  .photo5 {
+    background-image: url(img/bg_photo5.png);
+    background-size: cover;
+    width: 300.63px;
+    height: 400.84px;
+    left: 319px;
+    top: 2430px;
+    transform: rotate(1.07deg);
+  }
+    .photo6 {
+    background-image: url(img/bg_photo6.png);
+    background-size: cover;
+    width: 309px;
+    height: 412px;
+    right: 294px;
+    top: 2904px;
+    transform: rotate(4.24deg);
+  }
+    .photo7 {
+    background-image: url(img/bg_photo7.png);
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    left: 319px;
+    top: 3625px;
+    transform: rotate(-3.18deg);
+  }
+      .photo8 {
+    background-image: url(img/bg_photo8.png);
+    background-size: cover;
+    width: 269px;
+    height: 358px;
+    right: 281px;
+    top: 4006px;
+    transform: rotate(-5.45deg);
+    z-index: -1;
   }
 }
