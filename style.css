@@ -225,7 +225,7 @@ h3 {
       rgba(47, 89, 131, 0.5) 50%,
       rgba(47, 89, 131, 0) 100%);
   width: 100%;
-  min-height: 902px;
+  min-height: 904px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -630,7 +630,7 @@ h3 {
 #timer {
   font-family: 'Baskerville', serif;
   font-size: 26px;
-  color: #2c5371;
+  color: #000;
   padding-top: 10px;
 }
 
