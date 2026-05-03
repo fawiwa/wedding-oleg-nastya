@@ -203,24 +203,13 @@ h3 {
   z-index: 1;
 }
 
-/* .wedding-day .day-num::before {
-  content: '❤';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #336096;
-  font-size: 2.5rem;
-  z-index: -1;
-  font-style: normal;
-} */
 .wedding-day .day-num::before {
   content: '';
   position: absolute;
-  width: 36px;
-  height: 30px;
-  top: 50%;
-  left: 50%;
+  width: 40px;
+  height: 40px;
+  top: 59%;
+  left: 56%;
   transform: translate(-50%, -50%);
   background-color: #336096;
   mask: url('data:image/svg+xml;utf8,<svg...>...</svg>') no-repeat center;
@@ -562,7 +551,7 @@ h3 {
   position: absolute;
   object-fit: contain;
   display: inline-block;
-  top: 46.6%;
+  top: 42.5%;
   left: 12.2%;
 }
 
@@ -630,10 +619,29 @@ h3 {
   opacity: 0.8;
 }
 
+.countdown-container {
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+#timer {
+  font-family: 'Baskerville', serif;
+  font-size: 26px;
+  color: #2c5371;
+  padding-top: 10px;
+}
+
+#timer span {
+  font-weight: bold;
+}
+
 .footer {
   font-size: 52px;
   margin-top: 54px;
-  padding-top: 67px;
+  padding-top: 37px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -680,8 +688,6 @@ h3 {
   display: block;
   padding-top: -50px;
 }
-
-
 
 .bottom-wave {
   position: absolute;
@@ -753,7 +759,7 @@ h3 {
   }
 
   .dresscode img {
-    top: 45%;
+    top: 41.5%;
   }
 
   .footer-polaroid {
@@ -844,12 +850,12 @@ h3 {
   }
 
   .flowers img {
-    right: -22.8%;
+    right: -23.8%;
     top: 15.1%;
   }
 
   .dresscode img {
-    top: 45%;
+    top: 42%;
     left: 10%;
   }
 
