@@ -762,7 +762,7 @@ h3 {
   }
 
   .dresscode img {
-    top: 41.5%;
+    top: 41%;
   }
 
   .footer-polaroid {
@@ -831,7 +831,7 @@ h3 {
   }
 
   .timeline {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
   .timeline-item.row-left {
@@ -854,11 +854,11 @@ h3 {
 
   .flowers img {
     right: -23.8%;
-    top: 15.1%;
+    top: 13.1%;
   }
 
   .dresscode img {
-    top: 42%;
+    top: 41.5%;
     left: 10%;
   }
 
