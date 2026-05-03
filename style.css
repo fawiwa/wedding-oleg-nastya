@@ -62,7 +62,9 @@ h4 {
   padding: 0;
 }
 
-
+.desktop-photo {
+  display: none;
+}
 
 .container {
   display: flex;
@@ -840,7 +842,7 @@ h3 {
   }
 
   .gradient {
-    margin-top: -18px;
+    margin-top: -20px;
   }
 
   .timeline {
@@ -923,5 +925,21 @@ h3 {
     transform: scale(0.5) translateX(-20px) !important;
     transform-origin: center bottom;
     display: block;
+  }
+}
+@media (min-width: 1100px) {
+  .desktop-photo {
+    display: block;
+    position: fixed;
+    z-index: 100;
+  }
+  .photo1 {
+    background-image: url(img/bg_photo1.heic);
+    background-size: cover;
+    background-position: center;
+    width: 396px;
+    height: 297px;
+    left: 5%;
+    bottom: 20%;
   }
 }
