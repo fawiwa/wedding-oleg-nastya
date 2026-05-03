@@ -630,8 +630,12 @@ h3 {
 #timer {
   font-family: 'Baskerville', serif;
   font-size: 26px;
-  color: #000;
-  padding-top: 10px;
+  color: #fff;
+  align-items: center;
+  background-color: #336096;
+  padding: 8px 11px;
+  border-radius: 14px;
+  margin-top: 12px;
 }
 
 #timer span {
@@ -679,7 +683,6 @@ h3 {
   z-index: 2;
   margin-top: -132px;
   margin-left: 35px;
-  /*   padding-bottom: 173px; */
 }
 
 .footer-img {
