@@ -840,7 +840,7 @@ h3 {
   }
 
   .gradient {
-    margin-top: -15px;
+    margin-top: -18px;
   }
 
   .timeline {
@@ -866,12 +866,13 @@ h3 {
   }
 
   .flowers img {
-    right: -19.8%;
+    right: -22.8%;
     top: 15.1%;
   }
 
   .dresscode img {
     top: 45%;
+    left: 10%;
   }
 
   .footer-polaroid {
